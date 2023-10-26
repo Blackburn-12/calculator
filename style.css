@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Carme&family=Montserrat:wght@400;500;700&family=Poppins:wght@300&family=Roboto:ital@1&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images3.alphacoders.com/132/1323484.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.video video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+.calculator{
+    top: 25%;
+    position: absolute;
+    /* background: black; */
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calculator form input{
+    
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #333333;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+form .screen{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .screen input{
+    padding-right: 15px;
+    /* background: black; */
+    background: rgba(0, 0, 0, 0.84);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.2px);
+    -webkit-backdrop-filter: blur(7.2px);
+    border: 1px solid rgba(0, 0, 0, 0.54);
+    border-radius: 10px;
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+form input.airthmatic-opt{
+    background-color: #ff9f0a;
+    color: white;
+}
+form input.zero-btn{
+    border-radius: 15%;
+    width: 145px;
+}
+
+form input.grey-btn{
+    background: #A5A5A5;
+}
