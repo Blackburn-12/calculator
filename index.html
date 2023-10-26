@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+  
+   
+      <div class="container" >
+      
+        <div class="calculator" >
+      
+
+            <form >
+                <div class="screen" >
+                    <input type="text" id="display">
+                </div>
+                    <div>
+                        <input type="button" value="AC" class="grey-btn" onclick="allClear()">
+                        <input type="button" value="DEL" class="grey-btn" onclick="deletebtn()">
+                        <input type="button" value="%" class="grey-btn" onclick="alert('ye kaam ni krta SIR!')">
+                        <input type="button" value="/" class="airthmatic-opt" onclick="getValues('/')">
+                    </div>
+
+                    <div>
+                        <input type="button" value="7" onclick="getValues(7)" >
+                        <input type="button" value="8" onclick="getValues(8)">
+                        <input type="button" value="9" onclick="getValues(9)">
+                        <input type="button" value="X" class="airthmatic-opt" onclick="getValues('*')">
+                    </div>
+
+                    <div>
+                        <input type="button" value="4" onclick="getValues(4)">
+                        <input type="button" value="5" onclick="getValues(5)">
+                        <input type="button" value="6" onclick="getValues(6)">
+                        <input type="button" value="-" class="airthmatic-opt" onclick="getValues('-')">
+                    </div>
+
+                    <div>
+                        <input type="button" value="1" onclick="getValues(1)">
+                        <input type="button" value="2" onclick="getValues(2)">
+                        <input type="button" value="3" onclick="getValues(3)">
+                        <input type="button" value="+" class="airthmatic-opt" onclick="getValues('+')">
+                    </div>
+
+                    <div>
+                        <input type="button" value="0" class="zero-btn" onclick="getValues(0)">
+                        <input type="button" value="." onclick="getValues('.')">
+                        <input type="button" value="=" onclick="result()">
+                        
+                    </div>
+                
+            </form>
+        </div>
+    </div>
+
+  </body>
+</html>
